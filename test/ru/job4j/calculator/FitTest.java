@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class FitTest {
 
+
     @Test
     public void manWeight() {
         short in = 187;
