@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class MortgageTest {
     @Test
     public void when1Year() {
-        int year = Mortgage.year(1000.00, 1200, 1);
+        int year = Mortgage.year(1000, 1200, 1);
         assertThat(year, is(1));
     }
 
