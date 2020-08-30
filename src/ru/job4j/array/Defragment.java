@@ -7,11 +7,13 @@ public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
-                int point = index; /* указатель на null ячейку. */
+                //int point = index; /* указатель на null ячейку. */
                 /* переместить первую не null ячейку. Нужен цикл. */
                 for (int pointnotnull = index; pointnotnull < array.length; pointnotnull++) {
                     if (array[pointnotnull] != null) {
-                        Collections.swap(Arrays.asList(array), point, pointnotnull);
+                        //Collections.swap(Arrays.asList(array), point, pointnotnull);
+                        array[index] = array[pointnotnull];
+                        array[pointnotnull] = null;
                         break;
                     }
                 }
